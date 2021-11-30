@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    color: whitesmoke;
+    background-color: rgb(216, 212, 212);
+}
+.containers{width: 100%;}
+
+header{
+    width: 100%;
+    background-color:rgb(254, 74, 73);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
+}
+.nav-container{
+    width: 89%;
+    padding: 0px 0 0px 0;
+    margin:auto;
+    display:flex;
+    align-items: center;
+    height: 13vh;
+}
+.nav-header-logo h3{
+    font-size:31px;
+    font-weight: bold;
+}
+header .navlinks{
+    flex-grow: 4;
+     width: 20%;
+    text-align: right;
+}
+header .navlinks ul{list-style-type: none; }
+ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 7px;
+}
+ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight: bold;
+    font-size:17px;
+
+    position: relative;
+    animation: mymove 5s infinite;
+}
+ul li a:active{
+ 
+    color:rgb(158, 21, 21);
+}
+
+/* @keyframes mymove {
+    0% {color: rgb(255, 255, 255);}
+    50%{color: green}
+    100%{color: yellow;}
+} */
+
+.main{
+   width: 100%; 
+}
+.main-container{
+    width: 99%;
+    margin: auto;
+    display: flex; 
+    margin-top: 10px;
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(14, 12, 12);
+    font-family: 'Lobster Two', cursive;
+}
+.question{
+    width: 86%;
+    height:70vh;
+    margin: auto;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    box-shadow: 4px 5px 6px black;
+    position: relative;
+}
+.question_box{
+    width: 45%;
+    height: 16vh;
+}
+.answers{
+    width: 20%;
+    height:70vh;
+    border-radius: 5px;
+    margin: auto;
+    margin-left: 5px;
+}
+.answers_option{
+    width: 97%;
+    height: 22.69vh;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background-color:pink;
+    margin: auto;
+    box-shadow: 4px 5px 6px black;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#option_2,
+#option_3{margin-top: 6px;}
+
+#option_1{background-color:rgb(211, 21, 21)}
+#option_2{background-color:rgb(22, 22, 175)}
+#option_3{background-color:rgb(196, 196, 12)}
+
+#option_1:hover{background-color:rgb(177, 26, 26)}
+#option_2:hover{background-color:rgb(17, 17, 124)}
+#option_3:hover{background-color:rgb(172, 172, 23)}
+
+#option1,#option2,#option3{
+    width: 100%;
+}
+#j{
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 30px;
+
+}
+@media(max-width:504px) {
+    .nav-container{
+        width: 100%;
+        padding-right: 9px;
+        height: 19vh;
+    
+    }
+    header{
+        font-size: 14px;
+    }
+}
